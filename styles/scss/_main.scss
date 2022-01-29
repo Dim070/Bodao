@@ -1,0 +1,432 @@
+h3 {
+	font-size: 4.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.name {
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 76.8px;
+	text-transform: uppercase;
+	display: flex;
+	gap: 10px;
+
+	.name_bodao {
+		color: transparent;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #FFFFFF;
+	}
+}
+
+
+.wrapper {
+	min-height: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	//overflow: hidden;
+	color: #FFFFFF;
+}
+
+.header__container {
+	margin: 10px 0 55px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__location {
+	display: flex;
+	height: 58px;
+	gap: 21px;
+	align-items: center;
+}
+
+.header__location_img {
+	position: relative;
+
+	& :last-child {
+		width: 14px;
+		height: 14px;
+		position: absolute;
+		right: 25%;
+		top: 20%;
+	}
+}
+
+.location__adress {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 24px;
+
+	& a {
+		color: #FFFFFF;
+	}
+}
+
+.location__adress_first {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.header__contacts {
+	display: flex;
+	gap: 15px;
+}
+
+.header__contacts_info {
+	display: flex;
+	flex-direction: column;
+
+	& :first-child {
+		font-weight: 700;
+		font-size: 1.25rem;
+		line-height: 30px;
+		color: #FFFFFF;
+	}
+
+	& :last-child {
+		text-align: right;
+		font-weight: 400;
+		font-size: 0.75rem;
+		text-decoration: underline;
+		color: #FFFFFF;
+	}
+}
+
+//mainPage
+.mainPage__container {
+	background-image: url("./../../img/main/main.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+	height: 750px;
+	position: relative;
+}
+
+.mainPage_about {
+	position: absolute;
+	width: 330px;
+	height: 93px;
+	top: 115px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 31px;
+	z-index: 10;
+}
+
+.mainPage_title {
+	position: absolute;
+	top: 50%;
+	word-spacing: 62px;
+	font-size: 4.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.mainPage_desription {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 135px;
+	display: flex;
+	gap: 493px;
+	align-items: center;
+}
+
+.mainPage_desription-about {
+	width: 410px;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 27px;
+}
+
+
+//aboutPage 
+.aboutPage__container {
+	margin-top: 150px;
+	display: flex;
+	align-items: center;
+	gap: 120px;
+}
+
+.aboutPage__bg {
+	position: relative;
+}
+
+.aboutPage__scope {
+	position: absolute;
+	right: -18px;
+	bottom: -95px;
+	z-index: 10;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+.aboutPage__scope_img {
+	width: 420px;
+	height: 420px;
+	padding: 18px;
+}
+
+.aboutPage__content_title {
+	margin-bottom: 60px;
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 86.4px;
+}
+
+.aboutPage__content_description {
+	width: 520;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 30px;
+	margin-bottom: 80px;
+}
+
+//trainersPage
+
+.trainersPage__container {
+	margin-top: 263px;
+}
+
+.trainersPage__content {
+	margin-top: 100px;
+	display: flex;
+	gap: 10px;
+}
+
+.trainersPage__content_man {
+	background-image: url("./../../img/trainers/man.png");
+	width: 630px;
+	height: 550px;
+	position: relative;
+
+	.name {
+		position: absolute;
+		bottom: -30px;
+	}
+}
+
+.trainersPage__content_woman {
+	width: 630px;
+	height: 450px;
+	background-image: url("./../../img/trainers/woman.png");
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.trainersPage__content_woman-card {
+	position: absolute;
+	bottom: -130px;
+}
+
+.trainersPage__content_woman-card-desription {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 27px;
+	margin-top: 20px;
+}
+
+//directionsPage
+.directionsPage__container {
+	margin-top: 150px;
+
+}
+
+.directionsPage_title {
+	margin-bottom: 100px;
+}
+
+.directionsPage__cards {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1910px;
+	margin-left: -310px;
+}
+
+.directionsPage__cards__card {
+	position: relative;
+	width: 477px;
+}
+
+.directionsPage__cards__card_name {
+	width: 370px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+	font-weight: 700;
+	word-wrap: break-word;
+	text-align: center;
+	color: transparent;
+	-webkit-text-stroke: 2px #FFFFFF;
+}
+
+//schedulePage
+
+.schedulePage__cantiner {
+	margin-top: 150px;
+	max-width: 1300px;
+}
+
+.schedulePage__schedule {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	gap: 30px;
+}
+
+.card {
+	width: 410px;
+	height: 540px;
+	padding: 30px 30px 40px 30px;
+}
+
+.card__duration {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.card__duratio_term {
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+.card__duratio_number {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.card_content {
+	width: 350px;
+	margin-top: 50px;
+	font-size: 1.125rem;
+	line-height: 27px;
+	font-weight: 500;
+}
+
+.card_price {
+	margin: 60px 0 30px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+.card__price-previous {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-decoration: line-through;
+}
+
+//instaPage
+.instaPage__container {
+	margin-top: 150px;
+}
+
+.instaPage__imgs {
+	display: flex;
+	gap: 30px;
+	margin-top: 100px;
+}
+
+//footer
+.footer__container {
+	display: flex;
+	margin-top: 100px;
+	gap: 150px;
+}
+
+.footer__about {
+	width: 410px;
+}
+
+.footer__about_descr {
+	margin-top: 20px;
+	font-size: 1.125rem;
+	line-height: 27px;
+}
+
+.footer__about_links {
+	margin-top: 43px;
+
+	& a {
+		margin-left: 50px;
+	}
+
+	& a:first-child {
+		margin-left: 0;
+	}
+}
+
+.footer__about_policy {
+	margin: 43px 0 145px 0;
+
+	& a {
+		font-size: 1rem;
+		font-weight: 400;
+		color: #FFFFFF;
+	}
+}
+
+.footer__anchors {
+	width: 172px;
+}
+
+.footer__anchors_title {
+	margin-top: 43px;
+	font-size: 1.25rem;
+}
+
+.footer__anchors_list {
+	margin-top: 63px;
+
+	& li {
+		font-size: 1.125rem;
+		font-weight: 400;
+		margin-top: 30px;
+		color: #FFFFFF;
+	}
+
+	& a {
+		color: #FFFFFF;
+	}
+}
+
+.footer__contacts {
+	width: 410px;
+
+	& a {
+		display: block;
+		margin-top: 15px;
+		color: #FFFFFF;
+		font-size: 1.125rem;
+	}
+}
+
+.footer__contacts_title {
+	margin-top: 43px;
+	margin-bottom: 63px;
+	font-size: 20px;
+}
+
+.footer__contacts__link {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__contacts__link_title {
+	margin-top: 30px;
+	color: #F9BA50;
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+
+}
