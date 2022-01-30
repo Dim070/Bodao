@@ -19,12 +19,16 @@ h3 {
 	}
 }
 
+.container {
+	margin-left: 20px;
+	margin-right: 20px;
+}
 
 .wrapper {
 	min-height: 100%;
 	max-width: 1300px;
 	margin: 0 auto;
-	//overflow: hidden;
+	overflow: hidden;
 	color: #FFFFFF;
 }
 
@@ -114,14 +118,16 @@ h3 {
 	font-weight: 500;
 	line-height: 31px;
 	z-index: 10;
+	text-transform: none;
 }
 
 .mainPage_title {
 	position: absolute;
 	top: 50%;
-	word-spacing: 62px;
+	word-spacing: 40px;
 	font-size: 4.5rem;
 	font-weight: 700;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -131,7 +137,7 @@ h3 {
 	width: 100%;
 	height: 135px;
 	display: flex;
-	gap: 493px;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -148,11 +154,16 @@ h3 {
 	margin-top: 150px;
 	display: flex;
 	align-items: center;
-	gap: 120px;
+	justify-content: space-between;
+	gap: 20px;
 }
 
 .aboutPage__bg {
 	position: relative;
+}
+
+.aboutPage__bg img {
+	width: 100%;
 }
 
 .aboutPage__scope {
@@ -165,9 +176,12 @@ h3 {
 }
 
 .aboutPage__scope_img {
-	width: 420px;
-	height: 420px;
+	width: 100%;
 	padding: 18px;
+}
+
+.aboutPage__content {
+	width: 520px;
 }
 
 .aboutPage__content_title {
@@ -175,10 +189,10 @@ h3 {
 	font-size: 72px;
 	font-weight: 700;
 	line-height: 86.4px;
+	text-transform: uppercase;
 }
 
 .aboutPage__content_description {
-	width: 520;
 	font-size: 1.125rem;
 	font-weight: 500;
 	line-height: 30px;
@@ -194,14 +208,17 @@ h3 {
 .trainersPage__content {
 	margin-top: 100px;
 	display: flex;
-	gap: 10px;
+	gap: 30px;
+	justify-content: space-between;
 }
 
 .trainersPage__content_man {
 	background-image: url("./../../img/trainers/man.png");
 	width: 630px;
-	height: 550px;
+	height: 450px;
 	position: relative;
+	background-repeat: no-repeat;
+	background-size: contain;
 
 	.name {
 		position: absolute;
@@ -214,6 +231,7 @@ h3 {
 	height: 450px;
 	background-image: url("./../../img/trainers/woman.png");
 	background-repeat: no-repeat;
+	background-size: contain;
 	position: relative;
 }
 
@@ -274,16 +292,20 @@ h3 {
 }
 
 .schedulePage__schedule {
-	display: flex;
-	flex-wrap: wrap;
 	margin-top: 100px;
-	gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+	justify-content: center;
 }
 
 .card {
 	width: 410px;
 	height: 540px;
 	padding: 30px 30px 40px 30px;
+
+	& img {
+		width: 350px;
+	}
 }
 
 .card__duration {
@@ -303,7 +325,7 @@ h3 {
 }
 
 .card_content {
-	width: 350px;
+
 	margin-top: 50px;
 	font-size: 1.125rem;
 	line-height: 27px;
@@ -317,12 +339,12 @@ h3 {
 	align-items: flex-end;
 	font-size: 2.25rem;
 	font-weight: 700;
-}
 
-.card__price-previous {
-	font-size: 1.5rem;
-	font-weight: 700;
-	text-decoration: line-through;
+	&-previous {
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-decoration: line-through;
+	}
 }
 
 //instaPage
@@ -332,9 +354,17 @@ h3 {
 
 .instaPage__imgs {
 	display: flex;
-	gap: 30px;
+	flex-wrap: wrap;
+	gap: 15px;
 	margin-top: 100px;
+
+	& img {
+		width: 100%;
+		max-width: 410px;
+		min-height: 410px;
+	}
 }
+
 
 //footer
 .footer__container {
@@ -412,7 +442,7 @@ h3 {
 
 .footer__contacts_title {
 	margin-top: 43px;
-	margin-bottom: 63px;
+	margin-bottom: 33px;
 	font-size: 20px;
 }
 
@@ -427,6 +457,12 @@ h3 {
 	font-size: 0.75rem;
 	font-weight: 700;
 	text-transform: uppercase;
+}
 
+.footer__contacts__link_content {
+	margin-top: 15px;
+}
 
+.footer__ipad {
+	display: none;
 }
